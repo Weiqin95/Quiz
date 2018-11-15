@@ -9,6 +9,7 @@ public class Quiz {
     public String optionD;
     public String levell;
     public String choosen;
+    public String urlLink;
 
     public Quiz(String question, String answer, String optionA, String optionB, String optionC, String optionD, String levell) {
         this.question = question;
@@ -18,6 +19,25 @@ public class Quiz {
         this.optionC = optionC;
         this.optionD = optionD;
         this.levell = levell;
+    }
+
+    public Quiz(String question, String answer, String optionA, String optionB, String optionC, String optionD, String levell, String urlLink) {
+        this.question = question;
+        this.answer = answer;
+        this.optionA = optionA;
+        this.optionB = optionB;
+        this.optionC = optionC;
+        this.optionD = optionD;
+        this.levell = levell;
+        this.urlLink = urlLink;
+    }
+
+    public String getUrlLink() {
+        return urlLink;
+    }
+
+    public void setUrlLink(String urlLink) {
+        this.urlLink = urlLink;
     }
 
     public String getChoosen() {
